@@ -4,35 +4,35 @@
 To develop an image classification model using transfer learning with VGG19 architecture for the given dataset.
 
 ## Problem Statement and Dataset
-Include the problem statement and Dataset
+Develop an image classification model using transfer learning with the pre-trained VGG19 model.
 
-
-## Neural Network Model
-Include the neural network model diagram.
 
 ## DESIGN STEPS
 ### STEP 1: 
 
-Write your own steps
+Import required libraries and define image transforms.
 
 ### STEP 2: 
-
-
+Load training and testing datasets using ImageFolder.
 
 ### STEP 3: 
 
+Visualize sample images from the dataset.
 
 
 ### STEP 4: 
 
+Load pre-trained VGG19, modify the final layer for binary classification, and freeze feature extractor layers.
 
 
 ### STEP 5: 
 
+Define loss function (BCEWithLogitsLoss) and optimizer (Adam). Train the model and plot the loss curve.
 
 
 ### STEP 6: 
 
+Evaluate the model with test accuracy, confusion matrix, classification report, and visualize predictions.
 
 
 
@@ -151,8 +151,8 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
       print(f'Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_losses[-1]:.4f}, Validation Loss: {val_losses[-1]:.4f}')
 
     # Plot training and validation loss
-    print("Name:Sushmitha Gembunathan")
-    print("Register Number:212224040342")
+    print("Name:Sangeetha S")
+    print("Register Number:212224040287")
     plt.figure(figsize=(8, 6))
     plt.plot(range(1, num_epochs + 1), train_losses, label='Train Loss', marker='o')
     plt.plot(range(1, num_epochs + 1), val_losses, label='Validation Loss', marker='s')
@@ -190,8 +190,8 @@ def test_model(model, test_loader):
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
-    print("Name:Sushmitha Gembunathan        ")
-    print("Register Number:212224040342")
+    print("Name:Sangeetha S")
+    print("Register Number:212224040287")
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=train_dataset.classes, yticklabels=train_dataset.classes)
     plt.xlabel('Predicted')
@@ -200,8 +200,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print("Name:Sushmitha Gembunathan         ")
-    print("Register Number:212224040342        ")
+    print("Name:Sangeetha S ")
+    print("Register Number:212224040287       ")
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=train_dataset.classes))
 # Evaluate the model
