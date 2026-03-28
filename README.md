@@ -7,7 +7,7 @@ To develop an image classification model using transfer learning with VGG19 arch
 Develop an image classification model using transfer learning with the pre-trained VGG19 model.
 
 ##   NEURAL NETWORK DIAGRAM
-<img width="946" height="827" alt="image" src="https://github.com/user-attachments/assets/098042b0-5177-40ad-8a66-fc3a79ca42ce" />
+<img width="1105" height="641" alt="image" src="https://github.com/user-attachments/assets/0119ad7e-a472-4c74-8934-38f74a5aff96" />
 
 
 ## DESIGN STEPS
